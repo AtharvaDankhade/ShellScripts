@@ -35,7 +35,7 @@ if ! command -v aws &> /dev/null; then
     exit 1
 fi
 
-# step 3 : Execute the command based on the service name
+# step 3 : Execute the command based on the service names
 case $2 in
     ec2)
         aws ec2 describe-instances --region $1
